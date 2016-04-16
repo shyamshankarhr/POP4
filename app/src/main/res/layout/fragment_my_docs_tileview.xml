@@ -26,9 +26,9 @@
         android:id="@+id/imageButton"
         android:onClick="onClickAdd"
         android:background="@drawable/add"
-        android:layout_alignTop="@+id/listbutton"
-        android:layout_toLeftOf="@+id/listbutton"
-        android:layout_toStartOf="@+id/listbutton" />
+        android:layout_below="@+id/search"
+        android:layout_toLeftOf="@+id/tilebutton"
+        android:layout_toStartOf="@+id/tilebutton" />
 
     <ImageButton
         android:layout_width="40dp"
@@ -53,12 +53,14 @@
         android:layout_centerHorizontal="true"
         android:textSize="40dp" />
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mydocslist"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView2" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="234dp"
+        android:layout_marginStart="234dp" />
 
 </RelativeLayout>

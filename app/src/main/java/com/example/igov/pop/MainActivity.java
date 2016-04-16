@@ -21,6 +21,17 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.widget.RelativeLayout;
 
+import com.example.igov.pop.MainMenu.Govtbenefits;
+import com.example.igov.pop.MainMenu.commonlaws;
+import com.example.igov.pop.MainMenu.education;
+import com.example.igov.pop.MainMenu.healthcare;
+import com.example.igov.pop.navItems.feedback;
+import com.example.igov.pop.navItems.history;
+import com.example.igov.pop.navItems.home;
+import com.example.igov.pop.navItems.myDocs;
+import com.example.igov.pop.navItems.settings;
+import com.example.igov.pop.navItems.share;
+import com.example.igov.pop.navItems.signout;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
