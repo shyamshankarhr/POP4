@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Keerthi Suresh\\Documents\\GitHub\\POP4\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\Keerthi Suresh\\Documents\\GitHub\\POP4\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keerthi Suresh\\Documents\\GitHub\\POP4\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "C:\\Users\\Keerthi Suresh\\Documents\\GitHub\\POP4\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\Shyam Shankar\\AndroidStudioProjects\\POP4\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
         "source": "C:\\Users\\Shyam Shankar\\AndroidStudioProjects\\POP4\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
