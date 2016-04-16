@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/my_docs" android:layout_height="match_parent" android:background="#ffffff">
+    <EditText
+        android:layout_width="300dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:ellipsize="start"
+        android:background="#7792f3"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/search"
+        android:hint="Search..." />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:onClick="onClickAdd"
+        android:background="@drawable/add"
+        android:layout_alignTop="@+id/listbutton"
+        android:layout_toLeftOf="@+id/listbutton"
+        android:layout_toStartOf="@+id/listbutton" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/tilebutton"
+        android:layout_below="@+id/search"
+        android:background="@drawable/tileview"
+        android:onClick="onClickViewButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MY DOCS"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mydocslist"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2" />
+
+</RelativeLayout>

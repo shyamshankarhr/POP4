@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/newlib">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/tileView"
+        android:layout_below="@+id/search"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignStart="@+id/search"
+        >
+
+
+        <ImageButton android:id="@+id/education"
+            android:src="@drawable/education"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:onClick="onClickTile"
+            android:layout_above="@+id/commonlaws"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#66000000"/>
+
+
+        <ImageButton android:id="@+id/commonlaws"
+            android:src="@drawable/commonlaws"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:onClick="onClickTile"
+            android:layout_alignTop="@+id/healthcare"
+            android:layout_toLeftOf="@+id/govtbenefits"
+            android:layout_toStartOf="@+id/govtbenefits"
+            android:background="#66000000"/>
+
+
+        <ImageButton android:id="@+id/govtbenefits"
+            android:src="@drawable/govtbenefits"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:onClick="onClickTile"
+            android:layout_above="@+id/commonlaws"
+            android:layout_toRightOf="@+id/education"
+            android:layout_toEndOf="@+id/education"
+            android:background="#66000000"/>
+
+
+        <ImageButton android:id="@+id/healthcare"
+            android:src="@drawable/healthcare"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:onClick="onClickTile"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/govtbenefits"
+            android:layout_alignStart="@+id/govtbenefits"
+            android:background="#66000000"/>
+    </RelativeLayout>
+
+    <EditText
+
+        android:layout_width="300dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:ellipsize="start"
+        android:background="#dd000000"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/search"
+        android:hint="Search..."
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:height="10dp"
+        android:singleLine="true"/>
+
+
+
+
+</RelativeLayout>

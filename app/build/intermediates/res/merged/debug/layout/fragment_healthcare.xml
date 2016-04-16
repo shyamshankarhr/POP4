@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffffff">
+    <LinearLayout
+        android:layout_below="@+id/search_edu"
+        android:layout_width="match_parent"
+        android:layout_height="86.8dp"
+        android:background="#AA000000">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:src="@drawable/healthcare1"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/edu_trans"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthcare"
+            android:textColor="#ffffff"
+            android:layout_marginTop="35dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#000000">
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/govtbenefits"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/Govt_But"
+                android:background="#000000"
+                android:onClick="onClickTile"/>
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:src="@drawable/education"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/Educ_But"
+                android:onClick="onClickTile"/>
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:src="@drawable/commonlaws"
+                android:onClick="onClickTile"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/Comm_But"/>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <EditText
+        android:layout_width="300dp"
+        android:paddingStart="16dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_edu"
+        android:ellipsize="start"
+        android:background="#dd000000"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/search"
+        android:hint="Search..."
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:height="10dp"
+        android:singleLine="true"/>
+</RelativeLayout>
